@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.views.generic.edit import CreateView, UpdateView, DeleteView
 
 from .models import Frog
 
@@ -25,3 +26,20 @@ def frogs_index(request):
         'frogs': frogs 
     }
 )
+
+def frogs_detail(request, frog_id):
+  frog = Frog.objects.get(id=frog_id)
+  return render(request, 'frogs/detail.html', { 'frog': frog })
+
+class FrogCreate(CreateView):
+  model = Frog
+  fields = '__all__'
+  # success_url = '/frogs/{frog_id}'
+
+class FrogUpdate(UpdateView):
+  model = Frog
+  fields = ['breed', 'description', 'age']
+
+class FrogDelete(DeleteView):
+  model = Frog
+  success_url = '/frogs'

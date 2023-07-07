@@ -18,7 +18,9 @@
           <li><a href="/" class="left brand-logo">&nbsp;&nbsp;Frog Collector</a></li>
         </ul>
         <ul class="right">
-          <li><a href="/about">About</a></li>
+          <li><a href="{% url 'about' %}">About</a></li>
+          <li><a href="{% url 'frogs_create' %}">Add Frog</a></li>
+          <li><a href="{% url 'index' %}">Frogs</a></li>
         </ul>
       </div>
     </nav>
