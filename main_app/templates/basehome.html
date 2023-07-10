@@ -31,55 +31,37 @@
   </header>
   <main class="container">
 
-    <!-- <div class="carousel carousel-slider" >
-      <a class="carousel-item" href=""><img src="{% static 'frog1.jpeg' %}"></a>
-      <a class="carousel-item" href=""><img src="{% static 'frog2.jpeg' %}"></a>
-      <a class="carousel-item" href=""><img src="{% static 'frog3.jpeg' %}"></a>
-      <a class="carousel-item" href=""><img src="{% static 'frog4.jpeg' %}"></a>
-      <a class="carousel-item" href=""><img src="{% static 'frog5.jpeg' %}"></a>
-    </div> -->
-
     <div class="slideshow-container" style="margin:32px 32px 32px 32px; display:flex; justify-content: baseline;">
       <div>
 
-      <!-- Next and previous buttons -->
+      <!-- next button -->
         <a class="prev" onclick="plusSlides(-1)" style="margin: 15px">&#10094;</a>
       </div>
       <div>
-          <!-- Full-width images with number and caption text -->
-          <!-- the fade after frog-slides creates the fade between slides -->
+          <!-- Full-width images  -->
           <div class="frog-slides fade">
-            <!-- <div class="number-text">1 / 5</div> -->
             <img src="{% static 'frog1.jpeg' %}" style="width:100%">
             <div class="text"></div>
           </div>
-          <!-- the fade after frog-slides creates the fade between slides -->
           <div class="frog-slides fade">
-            <!-- <div class="number-text">2 / 5</div> -->
             <img src="{% static 'frog2.jpeg' %}" style="width:100%">
             <div class="text"></div>
           </div>
-          <!-- the fade after frog-slides creates the fade between slides -->
           <div class="frog-slides fade">
-            <!-- <div class="number-text">3 / 5</div> -->
             <img src="{% static 'frog3.jpeg' %}" style="width:100%">
             <div class="text"></div>
           </div>
           <div class="frog-slides fade">
-            <!-- <div class="number-text">4 / 5</div> -->
             <img src="{% static 'frog4.jpeg' %}" style="width:100%">
             <div class="text"></div>
           </div>
           <div class="frog-slides fade">
-            <!-- <div class="number-text">5 / 5</div> -->
             <img src="{% static 'frog5.jpeg' %}" style="width:100%">
             <div class="text"></div>
           </div> 
-
-
       </div>
       <div>
-
+        <!-- previous button -->  
         <a class="next" onclick="plusSlides(1)" style="margin: 15px">&#10095;</a>
       </div>
          
@@ -87,13 +69,17 @@
 
   </div>
   <br>
-                  
+          
+  <div>
+    <h3 style="font-family: Amatic SC; text-align: center;">Welcome to the frog collector! You can create, edit and delete all kinds of frogs on this site.</h3>
+  </div>
+
   <!-- The dots/circles -->
-  <div style="text-align:center">
+  <!-- <div style="text-align:center">
     <span class="dot" onclick="currentSlide(1)"></span>
     <span class="dot" onclick="currentSlide(2)"></span>
     <span class="dot" onclick="currentSlide(3)"></span>
-  </div>
+  </div> -->
 
     {% block content %}
     {% endblock %}
@@ -133,7 +119,7 @@
     let i;
     //fetches required objects
     let slides = document.getElementsByClassName("frog-slides");
-    let dots = document.getElementsByClassName("dot");
+    //let dots = document.getElementsByClassName("dot");
 
     //if n is 4, then resets to 1 (first slide)
     //previous next buttons can cause 
@@ -153,15 +139,15 @@
 
     //resets the dots' class name that have active 
     //to a zero-length string~
-    for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-    }
+    //for (i = 0; i < dots.length; i++) {
+    //  dots[i].className = dots[i].className.replace(" active", "");
+    //}
 
     //changes the slide to show the appropriate slide
     slides[slideIndex-1].style.display = "block";
     
     //changes the dot to be active
-    dots[slideIndex-1].className += " active";
+    //dots[slideIndex-1].className += " active";
 
   } 
 </script>
