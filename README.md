@@ -1,6 +1,6 @@
 # The Frog Collector
 
-This simple and fun application demonstrates full CRUD capability and features a model-view-controller architecture. It was build with Python and Django.
+This simple and fun application demonstrates full CRUD capability and features a model-view-controller architecture. It was built with Python and Django.
 
 This was a group project. I was the backend developer and built out the router, model, views and controllers in Python. My partner focused on CSS styling and the photos.
 
