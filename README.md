@@ -6,8 +6,7 @@ This was a group project. I was the backend developer and built out the router, 
 
 A green palette was chosen to complement the subject matter, which is frogs. The Google font selected was Amatic SC, which provides a fun, playful look to the website.
 
-Click here to visit the website:
-https://github.com/drios2023-ga/frog-collector/assets/133999998/223ffbf1-60ee-467e-b508-be1a24156338
+Click here to visit the website: https://radiant-escarpment-18795-4b6508eaa82c.herokuapp.com/
 
 ## Screenshots
 
