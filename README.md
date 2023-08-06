@@ -25,3 +25,5 @@ Click here to visit the website: https://radiant-escarpment-18795-4b6508eaa82c.h
 ### Deleting a Frog
 ![image](https://github.com/drios2023-ga/frog-collector/assets/133999998/89e91726-55a0-4daf-b2cd-4c26876837bc)
 
+## To start this program
+ CD into the folder, then run "python3 manage.py runserver" at the command line.
